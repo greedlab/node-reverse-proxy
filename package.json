@@ -1,0 +1,29 @@
+{
+  "name": "node-reverse-proxy",
+  "version": "1.0.0",
+  "description": "node reverse proxy for my VPS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "pm2 start index.js -i 0 --name node-reverse-proxy --watch",
+    "debug": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greedlab/node-reverse-proxy.git"
+  },
+  "keywords": [
+    "node",
+    "reverse",
+    "proxy"
+  ],
+  "author": "bell@greedlab.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greedlab/node-reverse-proxy/issues"
+  },
+  "homepage": "https://github.com/greedlab/node-reverse-proxy#readme",
+  "dependencies": {
+    "redbird": "^0.5.6"
+  }
+}
