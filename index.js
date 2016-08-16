@@ -5,5 +5,5 @@
 
 var proxy = require('redbird')({port: 80});
 
-proxy.register("node.greedlab.com/node-back-template", "http://localhost:4002");
-proxy.register("node.greedlab.com/node-front-template", "http://localhost:4001");
+proxy.register("node-back-template.greedlab.com", "http://localhost:4002");
+proxy.register("node-front-template.greedlab.com", "http://localhost:4001");
